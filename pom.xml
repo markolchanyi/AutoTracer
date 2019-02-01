@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/1.0.0" xmlns:xsi="https://github.com/mo1316/AutoTracer " xsi:schemaLocation="http://maven.apache.org/POM/1.0.0 http://maven.apache.org/xsd/maven-1.0.0.xsd">
+    <modelVersion>1.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.scijava</groupId>
+        <artifactId>pom-scijava</artifactId>
+        <version>23.1.1</version>
+        <relativePath />
+    </parent>
+
+    <groupId>io.github.markolchanyi</groupId>
+    <artifactId>AutoTracer</artifactId>
+    <version>1.0.0</version>
+
+    <name>io.github.Mark:AutoTracer</name>
+    <description>Files that allow automated neuronal tracing.</description>
+    <url>https://github.com/markolchanyi/Automated-Axonal-Tracer</url>
+    <inceptionYear>2019</inceptionYear>
+    <organization>
+        <name>Imperial College London</name>
+        <url>https://www.imperial.ac.uk</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>Apache 2.0 Licence</name>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>oss</id>
+            <url></url>
+        </snapshotRepository>
+        <repository>
+            <id>oss</id>
+            <url></url>
+        </repository>
+    </distributionManagement>
+    <developers>
+        <developer>
+            <id>markolchanyi</id>
+            <name>Mark Olchanyi</name>
+            <url> </url>
+            <roles>
+                <role>lead</role>
+                <role>developer</role>
+                <role>debugger</role>
+                <role>reviewer</role>
+                <role>support</role>
+                <role>maintainer</role>
+            </roles>        
+        </developer>
+        <developer>
+            <id></id>
+            <name>Amir Sadikov</name>
+            <url> </url>
+            <roles>
+                <role>co-lead</role>
+                <role>developer</role>
+                <role>debugger</role>
+                <role>reviewer</role>
+                <role>support</role>
+                <role>maintainer</role>
+            </roles>        
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Shaun Lim Kong</name>
+        </contributor>
+        <contributor>
+            <name></name>
+        </contributor>
+        <contributor>
+            <name></name>
+            <properties>
+                <id></id>
+            </properties>
+        </contributor>
+    </contributors>
+
+    <mailingLists>
+        <mailingList>
+            <name>ImageJ Forum</name>
+            <archive>http://forum.imagej.net/</archive>
+        </mailingList>
+    </mailingLists>
+
+    <scm>
+        <connection>scm:git:git@github.com:Autotracer.git</connection>
+        <developerConnection>scm:git:git@github.com:mo1316/AutoTracer.git</developerConnection>
+        <url>git@github.com:markolchanyi/autoTracer.git</url>
+    </scm>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/mo1316/AutoTracer/issues</url>
+    </issueManagement>
+    <ciManagement>
+        <system>None</system>
+    </ciManagement>
+
+    <properties>
+        <package-name>io.github.mo1316.autotracing</package-name>
+        <main-class>io.github.markolchanyi.autotracing.src.main.java.watershed.watershedTransform</main-class>
+        <license.licenseName>bsd_2</license.licenseName>
+        <license.copyrightOwners>Imperial College London</license.copyrightOwners>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <scijava.jvm.version>1.8</scijava.jvm.version>
+    </properties>
+
+    <dependencies>   
+        <!-- ImageJ dependencies -->
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>imagej-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>imagej-legacy</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>ij</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>imagej</artifactId>
+        </dependency>
+        <!-- SciJava dependencies -->
+        <dependency>
+            <groupId>org.scijava</groupId>
+            <artifactId>scijava-common</artifactId>
+            <type>jar</type>
+        </dependency>
+        <!-- JavaCV dependencies -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv-platform</artifactId>
+            <version>1.4.2</version>
+        </dependency>
+			<groupId>io.github.joheras.</groupId>
+            <artifactId>IJ-OpenCV</artifactId>
+            <version>1.2.1-SNAPSHOT</version>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>imagej.public</id>
+            <url>http://maven.imagej.net/content/groups/public</url>
+        </repository>
+    </repositories>
+
+</project>
